@@ -37,6 +37,12 @@ let name = "Susan"
 //ternary operator: The conditional operator is a shorthand for writing conditional if...else statements. It is called a ternary operator because it takes three operands
 // syntax =>  (condition) ? expression1 : expression2
 
+let age = 21;
+let text = (age < 18) ?  "Minor" : "Adult";
+console.log(text);
+
+
+
 // 5 coding exercises:
 // 1. Declare const baseUrl = 'https://www.saucedemo.com' and const username = 'standard_user'. Using a template literal, log: Logging in as standard_user at https://www.saucedemo.com
 const baseUrl = 'https://www.saucedemo.com'
@@ -115,3 +121,4 @@ if (status = 'inactive') {
   console.log('User is inactive');   // why does this print?
 }
 // That's `=`, not `===`. `=` assigns `'inactive'` to `status`, and since `'inactive'` is truthy, the `if` block always runs.
+
