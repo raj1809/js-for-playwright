@@ -19,4 +19,4 @@ class CheckoutPage extends BasePage{
 }
     const checkoutpage = new CheckoutPage()
        checkoutpage.checkout()
-        
+             
