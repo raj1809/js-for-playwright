@@ -23,7 +23,7 @@ try {
   console.log(error.message);
 }
 
-try {
+try {  
   console.log(divide(10, 5));
 } catch (error) {
   console.log(error.message);
