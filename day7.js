@@ -1,8 +1,8 @@
 // Spread ...  "Take things OUT."
-// const fruits = ["apple", "banana", "mango"];
-// console.log(fruits);
-// console.log(...fruits);
-// Spread with arrays
+const fruits = ["apple", "banana", "mango"];
+console.log(fruits);
+console.log(...fruits);
+Spread with arrays
 const fruit = ["apple", "banana", "mango"];
 const veggies = ['potato', 'cauliflower', 'okra']
 const food = [...fruit, ...veggies]                 // ... unpacks both arrays.
@@ -59,4 +59,4 @@ const price = 'Price: $499';
 console.log(/\$\d+/.test(price)); // true — "does this string contain a $ followed by digits"
 
 // Playwright preview — regex directly in a locator
-// await page.getByText(/Welcome, .+/).isVisible();
+await page.getByText(/Welcome, .+/).isVisible();

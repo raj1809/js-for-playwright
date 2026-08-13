@@ -18,3 +18,4 @@ console.log(c.count);
 
 
 //  ReferenceError: count is not defined Because count by itself is looking for a local variable or a variable in an outer scope. It is not referring to this.count
+

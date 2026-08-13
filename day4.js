@@ -26,49 +26,49 @@
 
 // // console.log(response.data.user.name);
 
-// // Optional chaining (?.) lets you safely access nested object properties and returns undefined instead of throwing an error if any part of the chain is null or undefined.
-// const response = { data : null };
-// // console.log(response.data.user.name);  // type error
-// console.log(response?.data?.user?.name); // undefined
+// Optional chaining (?.) lets you safely access nested object properties and returns undefined instead of throwing an error if any part of the chain is null or undefined.
+const response = { data : null };
+// console.log(response.data.user.name);  // type error
+console.log(response?.data?.user?.name); // undefined
 
-// // Destructuring : Pulling values out of an object into their own variables.
-// const person = {
-//   name: "Alice",
-//   age: 25,
-//   city: "Delhi"
-// };
-// const { name, age } = person;
+// Destructuring : Pulling values out of an object into their own variables.
+const person = {
+  name: "Alice",
+  age: 25,
+  city: "Delhi"
+};
+const { name, age } = person;
 
-// console.log(name); // Alice
-// console.log(age);  // 25
+console.log(name); // Alice
+console.log(age);  // 25
 
 // // You can rename while destructuring:
-// const { name : userName } = person
-// console.log(userName);
+const { name : userName } = person
+console.log(userName);
 
 // // You can set defaults for missing properties:
-// const { role = 'Guest' } = user
-// console.log(role);
+const { role = 'Guest' } = user
+console.log(role);
 
 // Object.keys, Object.values, Object.entries
-// const student = { id: 1, name: 'sara', isActive: true };
-// console.log(Object.keys(student));
-// console.log(Object.values(student));
-// console.log(Object.entries(student));
+const student = { id: 1, name: 'sara', isActive: true };
+console.log(Object.keys(student));
+console.log(Object.values(student));
+console.log(Object.entries(student));
 
 // // JSON : JSON is just text that represents an object/array. APIs send and receive JSON as strings, not real JS objects — you have to convert.
 
-// const female = { id:9, name:'Monica Bellucci' }
-// const jsonString = JSON.stringify(female)
-// console.log(jsonString)  
-// console.log(typeof jsonString); // string
+const female = { id:9, name:'Monica Bellucci' }
+const jsonString = JSON.stringify(female)
+console.log(jsonString)  
+console.log(typeof jsonString); // string
 
 
-// const parsedBack = JSON.parse(jsonString);
-// console.log(parsedBack.name); // object
+const parsedBack = JSON.parse(jsonString);
+console.log(parsedBack.name); // object
 
-// console.log(female);
-// console.log(typeof female); // object
+console.log(female);
+console.log(typeof female); // object
 
 console.log('---------------------------------------------------------------------------------')
 // 5 coding exercises
